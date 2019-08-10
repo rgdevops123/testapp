@@ -17,5 +17,10 @@ def hello_user(username):
     return 'Why Hello %s!\n' % username
 
 
+@app.route('/hey/<username>')  # Dynamic route.
+def hello_user(username):
+    return 'Hey %s!\n It is great to see you!!!' % username
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')      # Open for everyone.
