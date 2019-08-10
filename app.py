@@ -24,7 +24,7 @@ def hello_user(username):
 
 @app.route('/well/<username>')  # Dynamic route.
 def hello_user(username):
-    return 'Well, well, well %s!\n How are you?' % username
+    return 'Well, well, well %s!\n How have you been?' % username
 
 
 if __name__ == '__main__':
