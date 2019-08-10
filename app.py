@@ -17,9 +17,9 @@ def hello_user(username):
     return 'Why Hello %s!\n' % username
 
 
-@app.route('/hey/<username>')  # Dynamic route.
+@app.route('/hello/<username>')  # Dynamic route.
 def hello_user(username):
-    return 'Hey %s!\n It is great to see you!!!' % username
+    return 'Hello %s!\n' % username
 
 
 @app.route('/well/<username>')  # Dynamic route.
